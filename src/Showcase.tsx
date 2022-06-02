@@ -33,15 +33,7 @@ const Showcase = () => {
       horizontal={true}
       data={data}
       renderItem={
-        ({ item }) => <ShowcaseCard
-          name={item.name}
-          author={item.author}
-          author_photo={item.author_photo}
-          image={item.image}
-          time={item.time}
-          price_eth={item.price_eth}
-          price_dol={item.price_dol}
-        />}
+        ({ item }) => <ShowcaseCard {...item} />}
     />
   )
 }

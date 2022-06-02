@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Image, TextInput, TouchableOpacity, View } from 'react-native';
-import searchIcon from "../assets/icons/search.png";
+import searchIcon from "../assets/icons/Search.png";
 import styles from "./styles";
 
 const Search = () => {
