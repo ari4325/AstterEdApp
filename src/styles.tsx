@@ -20,7 +20,8 @@ const styles = StyleSheet.create({
     },
     fit: {
         width: '100%',
-        height: '100%'
+        height: '100%',
+        resizeMode: 'cover'
     },
     white_text: {
         color: 'white'
@@ -351,6 +352,137 @@ const styles = StyleSheet.create({
     emoji_icon: {
         width: 25,
         height: 25
+    },
+
+    // ProfileTab.tsx
+    profile_header: {
+        height: 108,
+        backgroundColor: '#282828',
+        paddingTop: 50,
+        paddingBottom: 10,
+        alignItems: 'center'
+    },
+    back_icon: {
+        width: 10,
+        height: 20,
+        resizeMode: 'center',
+        margin: 20
+    },
+    profile_header_text: {
+        color: '#4F4E4E',
+        fontSize: 25,
+        fontWeight: 'bold'
+    },
+    profile_search: {
+        borderColor: '#4F4E4E',
+        borderRadius: 40,
+        borderWidth: 1,
+        height: 34,
+        paddingHorizontal: 5,
+        marginHorizontal: 20,
+        maxWidth: '50%'
+    },
+    profile_search_icon: {
+        width: 15,
+        height: 15,
+    },
+    profile_search_text: {
+        margin:0,
+        paddingVertical: 2,
+        paddingHorizontal: 5,
+        fontSize: 13
+    },
+    profile_photo:{
+        width: 80,
+        height: 80,
+        borderRadius: 40,
+        position: 'absolute'
+    },
+    profile_name: {
+        width: '45%',
+        padding: 10,
+        alignItems: 'center'
+    },
+    profile_ellipse: {
+        width: 100,
+        height: 100,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    profile_color: {
+        color: '#E42EC6',
+    },
+    profile_firstname: {
+        fontSize: 24
+    },
+    profile_lastname: {
+        color: '#4F4E4E',
+        fontSize: 18
+    },
+    separator: {
+        backgroundColor: '#4F4E4E',
+        width: 1,
+        height: '80%'
+    },
+    profile_details:{
+        width: '55%',
+        paddingHorizontal: 30,
+    },
+    profile_details_margins:{
+        marginVertical: 4
+    },
+    profile_group: {
+        backgroundColor: '#222222',
+        borderRadius: 6,
+    },
+    profile_rank: {
+        width: 30,
+        height: 30,
+        resizeMode: 'contain',
+        marginHorizontal: 10,
+        marginVertical: 7
+    },
+    profile_details_bar: {
+        height: 62
+    },
+    profile_text:{
+        fontSize: 12,
+    },
+    profile_text_small:{
+        fontSize: 10,
+    },
+    profile_text_large: {
+        fontSize: 24,
+    },
+    profile_badge: {
+        width: 28,
+        height: 28,
+    },
+    profile_controls: {
+        padding: 18,
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    profile_controls_text: {
+        fontSize: 14,
+        fontWeight: 'bold',
+        color: 'white',
+        flex: 1
+    },
+    profile_controls_button: {
+        height: 12,
+        width: 6,
+        resizeMode: 'contain'
+    },
+    profile_controls_value:{
+        marginRight: 10,
+        color: '#4F4E4E',
+        fontSize: 12
+    },
+    profile_switch_thumb: "#f4f3f4",
+    profile_switch_track: {
+        true: "#9747FF",
+        false: "#4F4E4E" 
     }
 })
 

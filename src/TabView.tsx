@@ -4,11 +4,11 @@ import { Image } from 'react-native';
 import collectionIcon from '../assets/icons/Collection.png';
 import discoveryIcon from '../assets/icons/Discovery.png';
 import homeIcon from '../assets/icons/Home.png';
-import settingIcon from '../assets/icons/Setting.png';
+import profileIcon from '../assets/icons/User.png';
 import Collection from './CollectionTab';
 import Discovery from './DiscoveryTab';
 import Home from "./HomeTab";
-import Setting from './SettingTab';
+import Profile from './ProfileTab';
 import styles from './styles';
 
 const Tab = createBottomTabNavigator();
@@ -20,7 +20,7 @@ const TabView = () => {
       ['Home', homeIcon],
       ['Discovery', discoveryIcon],
       ['Collection', collectionIcon],
-      ['Setting', settingIcon]
+      ['Profile', profileIcon]
     ])
     return (
       <Image source={icons.get(name)} style={[{ tintColor: color }, styles.tab_icon]} />
@@ -31,7 +31,7 @@ const TabView = () => {
       <Tab.Screen name='Home' component={Home} options={{ tabBarIcon: (info) => icon(info, "Home") }} />
       <Tab.Screen name='Discovery' component={Discovery} options={{ tabBarIcon: (info) => icon(info, "Discovery") }} />
       <Tab.Screen name='Collection' component={Collection} options={{ tabBarIcon: (info) => icon(info, "Collection") }} />
-      <Tab.Screen name='Setting' component={Setting} options={{ tabBarIcon: (info) => icon(info, "Setting") }} />
+      <Tab.Screen name='Profile' component={Profile} options={{ tabBarIcon: (info) => icon(info, "Profile") }} />
     </Tab.Navigator>
   )
 }
