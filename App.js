@@ -3,16 +3,17 @@ import { createNativeStackNavigator, TransitionSpecs } from '@react-navigation/n
 import type { Node } from 'react';
 import * as React from 'react';
 import TabView from './src/TabView'
-import Loading from './src/Loading'
 import CommentsContainer from './src/Comments';
+import Login from './src/Login'
 const Stack = createNativeStackNavigator();
 
 const App: () => Node = () => {
+  var loggedIn = false 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='TabView' screenOptions={{headerShown:false}}>
+      <Stack.Navigator initialRouteName={loggedIn?'TabView':'Login'} screenOptions={{headerShown:false}}>
+        <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="TabView" component={TabView} />
-        <Stack.Screen name="Loading" component={Loading} />
         <Stack.Screen name="Comments" component={CommentsContainer} options={{
           presentation: 'transparentModal', 
           animation: 'slide_from_bottom'

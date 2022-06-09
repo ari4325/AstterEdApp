@@ -45,6 +45,98 @@ const styles = StyleSheet.create({
         fontSize: 15
     },
 
+    // Login.tsx
+    login_background: {
+        backgroundColor: 'black',
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    login_bg: {
+        resizeMode: 'cover',
+        position: 'absolute',
+        top: 0,
+        bottom: undefined,
+        height: '50%',
+        width: '100%'
+    },
+    login_logo: {
+        position: 'absolute',
+        top: 150,
+        height: 81,
+        width: 278,
+        resizeMode: 'contain'
+    },
+    login_image: {
+        position: 'absolute',
+        top: '25%',
+        width: '100%',
+        height: 436,
+        resizeMode: 'contain'
+    },
+    login_button_position: {
+        position: 'absolute',
+        bottom: '15%',
+    },
+    login_button: {
+        paddingVertical: 17,
+        paddingHorizontal: 43,
+        backgroundColor: '#111111',
+        borderRadius: 28,
+    },
+    login_button_gradient: ['#E42EC6', '#3C1B36'],
+    login_button_border: {
+        padding: 2,
+        borderRadius: 30,
+    },
+    login_wallet_icon: {
+        width: 26,
+        height: 26,
+        marginRight: 15
+    },
+    connect_overlay: {
+        width: 328,
+        backgroundColor: '#1E1929',
+        borderRadius: 20,
+        alignSelf: 'center',
+        alignItems: 'center',
+        paddingVertical: 14,
+        paddingHorizontal: 25,
+    },
+    connect_list: {
+        height: 190,
+        marginBottom: 10
+    },
+    connect_item: {
+        marginHorizontal: 10,
+        marginVertical: 6,
+        backgroundColor: 'white',
+        borderRadius: 10,
+        paddingHorizontal: 8,
+        paddingVertical: 1,
+        alignItems: 'center'
+    },
+    connect_item_selected: {
+        marginHorizontal: 9,
+        marginVertical: 5,
+        borderWidth: 1,
+        borderColor: '#E42EC6'
+    },
+    connect_icon: {
+        height: 34,
+        width: 34,
+        resizeMode: 'contain'
+    },
+    connect_text: {
+        color: 'black',
+        fontSize: 10
+    },
+    connect_button: {
+        paddingVertical: 12,
+        paddingHorizontal: 43,
+        backgroundColor: '#111111',
+        borderRadius: 28,
+    },
     // Header.tsx
     header: {
         flexWrap: 'wrap',
@@ -387,12 +479,12 @@ const styles = StyleSheet.create({
         height: 15,
     },
     profile_search_text: {
-        margin:0,
+        margin: 0,
         paddingVertical: 2,
         paddingHorizontal: 5,
         fontSize: 13
     },
-    profile_photo:{
+    profile_photo: {
         width: 80,
         height: 80,
         borderRadius: 40,
@@ -424,11 +516,11 @@ const styles = StyleSheet.create({
         width: 1,
         height: '80%'
     },
-    profile_details:{
+    profile_details: {
         width: '55%',
         paddingHorizontal: 30,
     },
-    profile_details_margins:{
+    profile_details_margins: {
         marginVertical: 4
     },
     profile_group: {
@@ -445,10 +537,10 @@ const styles = StyleSheet.create({
     profile_details_bar: {
         height: 62
     },
-    profile_text:{
+    profile_text: {
         fontSize: 12,
     },
-    profile_text_small:{
+    profile_text_small: {
         fontSize: 10,
     },
     profile_text_large: {
@@ -474,7 +566,7 @@ const styles = StyleSheet.create({
         width: 6,
         resizeMode: 'contain'
     },
-    profile_controls_value:{
+    profile_controls_value: {
         marginRight: 10,
         color: '#4F4E4E',
         fontSize: 12
@@ -482,7 +574,7 @@ const styles = StyleSheet.create({
     profile_switch_thumb: "#f4f3f4",
     profile_switch_track: {
         true: "#9747FF",
-        false: "#4F4E4E" 
+        false: "#4F4E4E"
     }
 })
 
