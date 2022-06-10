@@ -12,10 +12,9 @@ import shareIcon from '../assets/icons/Share.png';
 import verifiedIcon from '../assets/icons/Verified.png';
 import image from '../assets/Image.png';
 import image2 from '../assets/sword.png';
-import CommentsContainer from './Comments';
 import styles from './styles';
 
-const Discovery = ({navigation}) => {
+const Discovery = ({ navigation }) => {
   const tabBarHeight = useBottomTabBarHeight() - 10;
   const data = [
     { type: "Following", name: "tadeubonini", image: image, profile: profile, likes: "143K", comments: "123K", isLiked: false, isVerified: true, isFollowing: false },
@@ -32,7 +31,7 @@ const Discovery = ({navigation}) => {
         setHeight(event.nativeEvent.layout.height)
       }}
       renderItem={
-        ({ item }) => (height !== undefined) && <Shorts {...item} height={height} navigation={navigation}/>}
+        ({ item }) => (height !== undefined) && <Shorts {...item} height={height} navigation={navigation} />}
     />
   )
 }
@@ -70,7 +69,7 @@ const ShortsInteractIcons = (props) => {
         <Image source={isLiked ? heartRedIcon : heartIcon} style={styles.shorts_icon} />
         <Text style={styles.shorts_icons_text}>{props.likes}</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={{ alignItems: 'center' }} onPress={() => {props.navigation.navigate('Comments', {id: 1, comments: props.comments})}}>
+      <TouchableOpacity style={{ alignItems: 'center' }} onPress={() => { props.navigation.navigate('Comments', { id: 1, comments: props.comments }) }}>
         <Image source={chatIcon} style={styles.shorts_icon} />
         <Text style={styles.shorts_icons_text}>{props.comments}</Text>
       </TouchableOpacity>
@@ -103,7 +102,7 @@ const ShortsDescription = (props) => {
         <Text>Try this</Text>
       </View>
       <View flex={1} />
-      <TouchableOpacity style={styles.shorts_plus_icon}>
+      <TouchableOpacity style={styles.shorts_plus_icon} onPress={() => { props.navigation.navigate('PostContent') }}>
         <Image source={plusIcon} style={styles.fit} />
       </TouchableOpacity>
     </View>

@@ -575,6 +575,73 @@ const styles = StyleSheet.create({
     profile_switch_track: {
         true: "#9747FF",
         false: "#4F4E4E"
+    },
+
+    // PostContent.tsx
+    post_header: {
+        position: 'absolute',
+        top: 50,
+        width: '100%',
+        paddingHorizontal: 22,
+    },
+    post_progressbar: {
+        borderWidth: 0,
+        color: "white", unfilledColor: "#FFFFFF4D",
+        width: null,
+        marginLeft: 10,
+    },
+    camera_controls: {
+        position: 'absolute',
+        bottom: 96,
+        width: '100%',
+        justifyContent: 'space-evenly',
+    },
+    camera_controls_previous: {
+        height: 48,
+        width: 48,
+        borderRadius: 24,
+    },
+    camera_capture_border: {
+        height: 77,
+        width: 77,
+        borderRadius: 40,
+        borderWidth: 2,
+        borderColor: '#FFFFFF4D',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    camera_video_record: {
+        backgroundColor: '#FF1717',
+        height: 60,
+        width: 60,
+        borderRadius: 30
+    },
+    camera_video_stop: {
+        backgroundColor: 'white',
+        height: 24,
+        width: 24,
+        borderRadius: 4
+    },
+    camera_photo: {
+        backgroundColor: 'white',
+        height: 60,
+        width: 60,
+        borderRadius: 30
+    },
+    camera_controls_flip: {
+        height: 40,
+        width: 40,
+    },
+    post_mode: {
+        height: 68,
+        justifyContent: 'center'
+    },
+    post_mode_text: {
+        marginHorizontal: 20,
+        color: '#ffffff4d'
+    },
+    post_mode_text_selected: {
+        color: 'white'
     }
 })
 
