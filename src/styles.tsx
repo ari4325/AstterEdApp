@@ -642,6 +642,73 @@ const styles = StyleSheet.create({
     },
     post_mode_text_selected: {
         color: 'white'
+    },
+
+    // CourseScreen.tsx
+    course_background: {
+        backgroundColor: '#111111',
+        flex: 1
+    },
+    course_header: {
+        height: 70,
+        backgroundColor: '#282828',
+        paddingTop: 30,
+        paddingBottom: 10,
+    },
+    course_video: {
+        aspectRatio: 16/9,
+        width: '100%'
+    },
+    course_topic_number: {
+        fontSize: 11,
+        color: '#404040'
+    },
+    course_topic_name: {
+        fontSize: 18,
+        width: '60%',
+        marginVertical: 5
+    },
+    course_interaction_icons: {
+        width: 24,
+        height: 21,
+        resizeMode: 'contain',
+        tintColor: '#4F4E4E',
+        marginRight: 20
+    },
+    course_liked_button: {
+        tintColor: undefined
+    },
+    course_content_button: {
+        tintColor: 'yellow'
+    },
+    course_overview_text: {
+        color: '#D6D6D6',
+        marginTop: 5
+    },
+    course_instructor: {
+        borderRadius: 30,
+        backgroundColor: '#222222',
+        marginTop: 10,
+    },
+    course_instructor_profile: {
+        height: 35,
+        width: 35,
+        resizeMode: 'cover',
+        borderRadius: 30
+    },
+    course_instructor_name: {
+        paddingLeft: 15,
+        paddingRight: 20
+    },
+    course_topic: {
+        backgroundColor: '#282828',
+        padding: 11,
+        marginTop: 6,
+        borderRadius: 6
+    },
+    course_unit: {
+        margin: 10,
+        marginTop: 15
     }
 })
 
