@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
     tabbar: {
         position: 'absolute',
         height: 80,
-        backgroundColor: '#3B3A38',
+        backgroundColor: '#111111',
         borderTopLeftRadius: 8,
         borderTopRightRadius: 8,
         borderTopWidth: 0
@@ -26,7 +26,9 @@ const styles = StyleSheet.create({
     white_text: {
         color: 'white'
     },
-
+    grey_text: {
+        color: '#BFBFBF'
+    },
     logo: {
         width: '70%',
         resizeMode: 'center'
@@ -482,7 +484,8 @@ const styles = StyleSheet.create({
         margin: 0,
         paddingVertical: 2,
         paddingHorizontal: 5,
-        fontSize: 13
+        fontSize: 13,
+        color: 'white'
     },
     profile_photo: {
         width: 80,

@@ -99,7 +99,7 @@ const ShortsDescription = (props) => {
             }
           </TouchableOpacity>
         </View>
-        <Text>Try this</Text>
+        <Text style={styles.white_text}>Try this</Text>
       </View>
       <View flex={1} />
       <TouchableOpacity style={styles.shorts_plus_icon} onPress={() => { props.navigation.navigate('PostContent') }}>

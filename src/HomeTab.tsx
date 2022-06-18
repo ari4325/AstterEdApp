@@ -31,7 +31,7 @@ const HomeScreen = ({ navigation }) => {
         <TopCreator />
         {/* Temporary button to be removed */}
         <TouchableOpacity onPress={() => { navigation.navigate("CourseScreen") }}>
-          <Text>Course</Text>
+          <Text style={{color: 'red'}}>Course</Text>
         </TouchableOpacity>
       </ScrollView>
     </ImageBackground>

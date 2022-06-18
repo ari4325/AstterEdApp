@@ -42,7 +42,7 @@ const Artwork = () => {
         />
         <View style={{ flex: 1 }}></View>
         <TouchableOpacity onPress={() => setValue("4")}>
-          <Text>View all</Text>
+          <Text style={styles.grey_text}>View all</Text>
         </TouchableOpacity>
       </View>
       <Showcase />

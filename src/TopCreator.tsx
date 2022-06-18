@@ -10,7 +10,7 @@ const TopCreator = () => {
       <View style={[styles.flex_row, styles.margins, { justifyContent: 'space-between' }]}>
         <Text style={styles.boldtext}>Top Creator</Text>
         <TouchableOpacity>
-          <Text>View all</Text>
+          <Text style={styles.grey_text}>View all</Text>
         </TouchableOpacity>
       </View>
       <Creator rank={1} profile={profile2} name={'anikadonin'} balance={20543.09} change={50.87} />
@@ -28,7 +28,7 @@ const Creator = (props) => {
       return <Text style={{ color: '#FF4040' }}>{props.change}%</Text>
     }
     else {
-      return <Text>{props.change}%</Text>
+      return <Text style={styles.white_text}>{props.change}%</Text>
     }
   }
   function numFormat(x) {
@@ -40,13 +40,13 @@ const Creator = (props) => {
   return (
     <View style={[styles.flex_row, styles.margins, styles.creator_box, { justifyContent: 'space-between' }]}>
       <View style={[styles.flex_row]}>
-        <Text style={styles.creator_margin}>#{props.rank}</Text>
+        <Text style={[styles.grey_text, styles.creator_margin]}>#{props.rank}</Text>
         <Image style={[styles.creator_profile, styles.creator_margin]} source={props.profile} />
         <View style={styles.creator_margin}>
           <Text style={styles.boldtext}> {props.name}</Text>
           <View style={styles.flex_row}>
             <Image style={styles.creator_logo} source={currency_logo} />
-            <Text>{numFormat(props.balance)} ETH</Text>
+            <Text style={styles.grey_text}>{numFormat(props.balance)} ETH</Text>
           </View>
         </View>
       </View>

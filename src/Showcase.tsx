@@ -57,9 +57,9 @@ const ShowcaseCard = (props) => {
         </View>
         <View style={styles.flex_row}>
           <Image style={styles.card_photo} source={props.author_photo} />
-          <Text style={styles.card_text}>{props.author}</Text>
+          <Text style={[styles.white_text, styles.card_text]}>{props.author}</Text>
           <View style={{ flex: 1 }} />
-          <Text style={styles.card_text}>${numFormat(props.price_dol)}</Text>
+          <Text style={[styles.white_text, styles.card_text]}>${numFormat(props.price_dol)}</Text>
         </View>
       </View>
     </ImageBackground>
