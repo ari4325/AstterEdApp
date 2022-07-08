@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import type { Node } from 'react';
 import * as React from 'react';
 import CommentsContainer from './src/Comments';
-import Login from './src/Login';
+import { Login, LoginProfile, LoginName, LoginBirthday, LoginIntrests, LoginTimeChoice } from './src/Login';
 import PostContent from './src/PostContent';
 import TabView from './src/TabView';
 const Stack = createNativeStackNavigator();
@@ -14,6 +14,11 @@ const App: () => Node = () => {
     <NavigationContainer>
       <Stack.Navigator initialRouteName={loggedIn ? 'TabView' : 'Login'} screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="LoginProfile" component={LoginProfile} />
+        <Stack.Screen name="LoginName" component={LoginName} />
+        <Stack.Screen name="LoginBirthday" component={LoginBirthday} />
+        <Stack.Screen name="LoginIntrests" component={LoginIntrests} />
+        <Stack.Screen name="LoginTimeChoice" component={LoginTimeChoice} />
         <Stack.Screen name="TabView" component={TabView} />
         <Stack.Screen name='PostContent' component={PostContent} />
         <Stack.Screen name="Comments" component={CommentsContainer} options={{

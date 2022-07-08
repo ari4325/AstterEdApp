@@ -139,6 +139,75 @@ const styles = StyleSheet.create({
         backgroundColor: '#111111',
         borderRadius: 28,
     },
+    login_margins: {
+        marginTop: 10,
+        marginHorizontal: 29,
+        marginBottom: "15%",
+    },
+    login_bold: {
+        color: 'white',
+        fontSize: 28,
+        marginVertical: 13,
+    },
+    login_profile_upload: {
+        height: 200,
+        width: 200,
+        borderRadius: 100,
+        backgroundColor: '#222222',
+        borderWidth: 2,
+        borderColor: '#4F4E4E',
+        overflow: 'hidden',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
+    login_profile_null: {
+        width: 60,
+        height: 60,
+        tintColor: '#4F4E4E',
+    },
+    login_text_input: {
+        width: '90%',
+        height: 60,
+        backgroundColor: '#222222cc',
+        borderRadius: 15,
+        borderWidth: 2,
+        borderColor: '#4F4E4E',
+        color: 'white',
+        paddingHorizontal: 15,
+        fontSize: 18,
+    },
+    login_subjects_view: {
+        marginVertical: 30,
+    },
+    login_subject: {
+        backgroundColor: '#222222cc',
+        margin: 5,
+        borderRadius: 30,
+        borderWidth: 2,
+        borderColor: '#4F4E4E',
+        paddingHorizontal: 30,
+        paddingVertical: 8,
+        color: 'white',
+        fontSize: 14,
+        textAlign: 'center',
+        textAlignVertical: 'center'
+    },
+    login_subject_selected: {
+        borderColor: 'yellow',
+        color: 'yellow'
+    },
+    login_time_input: {
+        width: 100,
+        height: 48,
+        fontSize: 14,
+        borderRadius: 24,
+        marginHorizontal: 5,
+    },
+    login_time_m: {
+        height: 48,
+        paddingHorizontal: 10
+    },
     // Header.tsx
     header: {
         flexWrap: 'wrap',
@@ -659,7 +728,7 @@ const styles = StyleSheet.create({
         paddingBottom: 10,
     },
     course_video: {
-        aspectRatio: 16/9,
+        aspectRatio: 16 / 9,
         width: '100%'
     },
     course_topic_number: {
