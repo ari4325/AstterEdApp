@@ -24,7 +24,7 @@ const HomeScreen = ({ navigation }) => {
   const tabBarHeight = useBottomTabBarHeight() - 10;
   return (
     <ImageBackground source={bgimage} resizeMode="cover" style={[styles.background, { marginBottom: tabBarHeight }]}>
-      <Header />
+      <Header navigation={navigation}/>
       <ScrollView style={styles.scrollview} fadingEdgeLength={50}>
         <Search />
         <Artwork />

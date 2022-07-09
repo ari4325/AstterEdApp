@@ -23,6 +23,11 @@ const styles = StyleSheet.create({
         height: '100%',
         resizeMode: 'cover'
     },
+    fit_contain: {
+        width: '100%',
+        height: '100%',
+        resizeMode: 'contain'
+    },
     white_text: {
         color: 'white'
     },
@@ -236,6 +241,19 @@ const styles = StyleSheet.create({
     header_amount_text: {
         paddingHorizontal: 8,
         color: 'white'
+    },
+    header_notification: {
+        backgroundColor: '#3B3A38',
+        width: 45,
+        height: 45,
+        borderRadius: 21,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginRight: 10,
+        padding: 8
+    },
+    header_notification_icon: {
+        resizeMode: 'contain'
     },
     header_profile: {
         height: 45,
@@ -781,6 +799,59 @@ const styles = StyleSheet.create({
     course_unit: {
         margin: 10,
         marginTop: 15
+    },
+
+    // Notifications.tsx
+    no_notification: {
+        width: 200,
+        height: 200
+    },
+    no_notification_text: {
+        color: 'white',
+        marginTop: 15,
+        width: '70%',
+        textAlign: 'center'
+    },
+    notification_heading: {
+        fontSize: 30
+    },
+    notification_recent: {
+        marginTop: 20,
+        textAlign: 'center',
+        fontSize: 16
+    },
+    notification_separator: {
+        height: 2,
+        width: 60,
+        backgroundColor: '#E42EC6',
+        alignSelf: 'center',
+        marginTop: 5,
+        marginBottom: 20
+    },
+    notification_gradient: ['#E42EC6', '#3C1B36'],
+    notification_box: {
+        width: '100%',
+        height: 80,
+        borderRadius: 12,
+        padding: 20,
+        marginVertical: 10
+    },
+    notification_icon: {
+        height: 48,
+        width: 48,
+        borderRadius: 12,
+        padding: 14,
+        backgroundColor: 'white',
+        marginRight: 20,
+    },
+    notification_time_icon: {
+        width: 12,
+        height: 12,
+        margin: 5
+    },
+    notification_time: {
+        color: 'white',
+        fontSize: 12
     }
 })
 
